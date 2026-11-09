@@ -1,9 +1,10 @@
 name: Release Gem
-on:
-  push:
-    tags:
-      - v*
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     tags:
+#       - v*
+# 
 jobs:
   release:
     timeout-minutes: 10

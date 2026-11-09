@@ -1,10 +1,11 @@
 name: Tests
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches: [main]
+#   pull_request:
+#     branches: [main]
+# 
 jobs:
   rspec:
     name: rspec (${{ matrix.ruby-version }}, ${{ matrix.target.os }}, shard ${{ matrix.target.shard }}/${{ matrix.target.shards }})
